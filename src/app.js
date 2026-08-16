@@ -71,7 +71,8 @@ export const createApp = ({ service = new AnimeService() } = {}) => {
         fontSrc: ["'self'"],
         objectSrc: ["'none'"],
         baseUri: ["'self'"],
-        formAction: ["'self'"]
+        formAction: ["'self'"],
+        upgradeInsecureRequests: null
       }
     }
   }));

@@ -34,7 +34,13 @@ test('API responds with a consistent envelope and security headers', async (t) =
   assert.equal(payload.data.id, 'test1234');
   assert.equal(payload.meta.cache, 'hit');
   assert.ok(response.headers.get('x-request-id'));
-  assert.ok(response.headers.get('content-security-policy'));
+  const contentSecurityPolicy = response.headers.get('content-security-policy');
+  assert.ok(contentSecurityPolicy);
+  assert.doesNotMatch(contentSecurityPolicy, /upgrade-insecure-requests/);
+
+  const stylesheetResponse = await fetch(`http://127.0.0.1:${server.address().port}/styles.css`);
+  assert.equal(stylesheetResponse.status, 200);
+  assert.match(stylesheetResponse.headers.get('content-type'), /^text\/css/);
 });
 
 test('stream endpoint returns HLS master and proxy information', async (t) => {
