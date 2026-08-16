@@ -1,0 +1,63 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-08-16T06:35:00.000Z",
+  "mappings": [
+    {
+      "anilistId": 21,
+      "anizoneSlug": "uyyyn4kf",
+      "title": "One Piece",
+      "verified": true
+    },
+    {
+      "anilistId": 150672,
+      "anizoneSlug": "feb8ql49",
+      "title": "Oshi no Ko",
+      "season": 1,
+      "verified": true
+    },
+    {
+      "anilistId": 166531,
+      "anizoneSlug": "27fvxfay",
+      "title": "Oshi no Ko Season 2",
+      "season": 2,
+      "verified": true
+    },
+    {
+      "anilistId": 182587,
+      "anizoneSlug": "ygfcnnhy",
+      "title": "Oshi no Ko Season 3",
+      "season": 3,
+      "verified": true
+    },
+    {
+      "anilistId": 101280,
+      "anizoneSlug": "m1zauh0z",
+      "title": "That Time I Got Reincarnated as a Slime Season 1",
+      "season": 1,
+      "verified": true
+    },
+    {
+      "anilistId": 108511,
+      "anizoneSlug": "1i22ielu",
+      "title": "That Time I Got Reincarnated as a Slime Season 2 Part 1",
+      "season": 2,
+      "part": 1,
+      "verified": true
+    },
+    {
+      "anilistId": 116742,
+      "anizoneSlug": "smntcyyv",
+      "title": "That Time I Got Reincarnated as a Slime Season 2 Part 2",
+      "season": 2,
+      "part": 2,
+      "verified": true
+    },
+    {
+      "anilistId": 156822,
+      "anizoneSlug": "lzq2z9md",
+      "title": "That Time I Got Reincarnated as a Slime Season 3",
+      "season": 3,
+      "verified": true
+    }
+  ]
+}

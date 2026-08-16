@@ -1,0 +1,31 @@
+{
+  "name": "anizone-metadata-api",
+  "version": "1.0.0",
+  "description": "A polished REST API and frontend for public AniZone anime metadata.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "check": "node --check src/index.js && node --check src/app.js && node --check src/client.js && node --check src/parsers.js && node --check src/service.js && node --check src/anilist.js && node --check src/mappings.js && node --check src/nlp.js && node --check src/proxy.js && node --check public/app.js",
+    "test": "node --test",
+    "verify": "node scripts/verify.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "anime",
+    "metadata",
+    "scraper",
+    "rest-api"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "1.1.2",
+    "compression": "1.8.1",
+    "cors": "2.8.5",
+    "express": "4.22.2",
+    "helmet": "8.1.0"
+  }
+}
