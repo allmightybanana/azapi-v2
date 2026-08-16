@@ -1,3 +1,8 @@
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'node:url';
+
+dotenv.config({ path: fileURLToPath(new URL('../.env', import.meta.url)) });
+
 const numberFromEnv = (name, fallback, minimum = 1) => {
   const value = Number.parseInt(process.env[name] ?? '', 10);
   return Number.isFinite(value) && value >= minimum ? value : fallback;

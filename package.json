@@ -25,6 +25,7 @@
     "cheerio": "1.0.0",
     "compression": "1.8.1",
     "cors": "2.8.5",
+    "dotenv": "16.6.1",
     "express": "4.22.2",
     "helmet": "8.1.0"
   }

@@ -65,7 +65,7 @@ Search at the source can occasionally be slow. AniAtlas tries the source search 
 
 ## Configuration
 
-Copy `.env.example` values into your environment as needed:
+Copy `.env.example` to `.env` and adjust the values as needed. The app loads this file from the project root; variables already supplied by the shell, PM2, or Docker take precedence.
 
 - `PORT` — HTTP port, default `3100`
 - `ANIZONE_BASE_URL` — source origin
@@ -74,8 +74,6 @@ Copy `.env.example` values into your environment as needed:
 - `CACHE_STALE_MS` — maximum stale fallback lifetime
 - `RATE_LIMIT_WINDOW_MS` and `RATE_LIMIT_MAX` — per-client API limits
 - `ANIZONE_PROXY` (or `HTTPS_PROXY` / `HTTP_PROXY`) — authenticated outbound forward proxy (e.g. `http://user:pass@host:port`) for scraping AniZone and AniList
-
-Node does not load `.env` files automatically in this project; supply variables through your shell, process manager, or Docker Compose.
 
 ## Docker
 
