@@ -12,7 +12,7 @@
     "verify": "node scripts/verify.js"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=18.17"
   },
   "keywords": [
     "anime",
@@ -22,7 +22,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "cheerio": "1.1.2",
+    "cheerio": "1.0.0",
     "compression": "1.8.1",
     "cors": "2.8.5",
     "express": "4.22.2",
